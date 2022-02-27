@@ -19,9 +19,9 @@
             <a href="index.html" class="logo">Jared Zwick</a>
             <nav>
                 <ul>
-                    <li><a href="#MyWork">My Work</a></li>
-                    <li><a href="#MySkills">My Skills</a></li>
-                    <li><a href="mailto:jareddzwick@gmail.com">Hire Me</a></li>
+                    <li><a href="#myProjects">My Projects</a></li>
+                    <li><a href="#MySkills">Guides</a></li>
+                    <li><a href="mailto:jareddzwick@gmail.com">Blogs</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,7 +39,7 @@
             <h1 class="stagger1">Hello, I'm Jared</h1>
             <div class="meet stagger1">
                 <span>👇</span>
-                <p>Check out my work</p>
+                <p>Check it out</p>
             </div>
             <svg class="scroll stagger1" width="40" height="77" viewBox="0 0 40 77">
                 <g id="scroll" transform="translate(-253 -787)">
@@ -65,23 +65,24 @@
         </svg>
     </div>
 
-    <section class="featured">
-        <div class="left">
-            <div class="inner transition2">
-                <p class="subtitle">Featured Project</p>
-                <a href="#" class="featured-title">Virtual Marketplace</a>
+<!--    <section class="featured">-->
+<!--        <div class="left">-->
+<!--            <div class="inner transition2">-->
+<!--                <p class="subtitle">Featured Project</p>-->
+<!--                <a href="#" class="featured-title">Virtual Marketplace</a>-->
 
-                <p class="featured-desc">This is my automated marketing system for dealerships. Contains automated
-                web services by giving users the ability to upload inventory data, manage content posts, and
-                automate customer outreach</p>
-            </div>
-        </div>
-        <img class="right transition2" src="{{url_for('static', filename='images/enzodealerboard.PNG')}}" alt="featured project">
-    </section>
+<!--                <p class="featured-desc">This is my automated marketing system for dealerships. Contains automated-->
+<!--                web services by giving users the ability to upload inventory data, manage content posts, and-->
+<!--                automate customer outreach</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <img class="right transition2" src="{{url_for('static', filename='images/enzodealerboard.PNG')}}" alt="featured project">-->
+<!--    </section>-->
 
     <section class="skills">
         <a name="MySkills"></a>
         <div class="skills-container">
+            <h1 style="transform: translate(0px); opacity: 1; font-size:4em; line-height: 1.2em; color:#38A3A5;"> What is this site?</h1>
             <ul>
                 <li class="transition2">
                     <div class="icon-container one">
@@ -89,29 +90,49 @@
                             <path d="M98 6L2 35L50.2462 44.5L61.0769 88L98 6Z" stroke="black" stroke-width="7"/>
                             </svg>
                     </div>
-                    <p class="skill-title">Web Development</p>
-                    <p class="featured-desc skill-desc">I have been making websites for over 9 years and I am in love with technical aspect of structuring websites as well as the creative aspects of making them appealing.</p>
+                    <p class="skill-title">My Portfolio</p>
+                    <p class="featured-desc skill-desc">
+                        I show-off a couple of my side-projects. These apps were made with Python utilizing flask
+                        or Java utilizing spring. Each project contains a deployed link and a github link.
+                    </p>
                 </li>
                 <li class="transition2">
                     <div class="icon-container two">
                         <img src="{{url_for('static', filename='images/appdevicon.svg')}}" alt="web-icon">
                     </div>
-                    <p class="skill-title">App Development</p>
-                    <p class="featured-desc skill-desc">My passion for coding has extended past websites to developing useful applications for everyone from Web to Mobile I have gained a wealth of experience in app development.</p>
+                    <p class="skill-title">Programming Guides</p>
+                    <p class="featured-desc skill-desc">
+                        I will post solutions or content that I come across in my development that I think others
+                        will find helpful.
+                    </p>
                 </li>
                 <li class="transition2">
                     <div class="icon-container three">
                         <img src="{{url_for('static', filename='images/data-icon.svg')}}" alt="web-icon">
                     </div>
-                    <p class="skill-title">Data Analysis</p>
-                    <p class="featured-desc skill-desc">I have been exploring the wonderful world of data. Having written software programs to analyze data sets, I have dabbled in statistical analysis, machine learning, data vizualization, and predictive modeling.</p>
+                    <p class="skill-title">My Blog</p>
+                    <p class="featured-desc skill-desc">
+                    I will use this site as an outlet for my thoughts on software development and creating a startup.
+                    </p>
                 </li>
             </ul>
         </div>
     </section>
+     <a name="myProjects"></a>
+<section class="featured">
+        <div class="left">
+            <div class="inner transition2">
+                <p class="subtitle">Featured Project</p>
+                <a href="#" class="featured-title">Enzo - CMS For Auto Dealers</a>
 
+                <p class="featured-desc">This is my automated marketing system for dealerships. Contains automated
+                web services by giving users the ability to upload inventory data, manage content posts, and
+                automate customer outreach</p>
+            </div>
+        </div>
+        <img class="right transition2" src="{{url_for('static', filename='images/enzodealerboard.PNG')}}" alt="featured project" style="border-radius: 4%;">
+    </section>
     <section class="portfolio">
-        <a name="MyWork"></a>
 
         <div class="portfolio-container transition3">
         <div class="portfolio-left">
