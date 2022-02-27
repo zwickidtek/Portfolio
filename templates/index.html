@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Jared Zwick</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;400;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="nav-container">
+        <header>
+            <a href="index.html" class="logo">Jared Zwick</a>
+            <nav>
+                <ul>
+                    <li><a href="#MyWork">My Work</a></li>
+                    <li><a href="#MySkills">My Skills</a></li>
+                    <li><a href="mailto:jareddzwick@gmail.com">Hire Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="social-header">
+            <ul>
+                <li><a href="https://github.com/JareddZwick"><img src="{{url_for('static', filename='images/github.png')}}" alt="github"></a></li>
+                <li><a href="https://www.linkedin.com/in/jared-zwick/"><img src="{{url_for('static', filename='images/linkedin.png')}}" alt="linkedin"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCeociudef_2-XeHkDbgnYyw"><img src="{{url_for('static', filename='images/youtube.png')}}" alt="youtube"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="content">
+            <h1 class="stagger1">Beautifully Crafted Software Experiences</h1>
+            <div class="meet stagger1">
+                <span>👇</span>
+                <p>Meet Jared Zwick</p>
+            </div>
+            <svg class="scroll stagger1" width="40" height="77" viewBox="0 0 40 77">
+                <g id="scroll" transform="translate(-253 -787)">
+                  <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(253 787)" fill="none" stroke="#fff" stroke-width="4">
+                    <rect width="40" height="77" rx="20" stroke="none"/>
+                    <rect x="2" y="2" width="36" height="73" rx="18" fill="none"/>
+                  </g>
+                  <circle class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="11" r="11" transform="translate(262 798)" fill="#fff"/>
+                </g>
+              </svg>
+
+
+        </div>
+        <svg width="611" height="639" viewBox="0 0 611 639" class="hero-design">
+            <rect class="square-anim" x="305" width="161.006" height="162" rx="24" fill="#38A3A5"/>
+            <rect class="square-anim" x="305" y="315" width="161.006" height="162" rx="24" fill="#38A3A5"/>
+            <rect class="square-anim" x="449" y="153" width="161.006" height="162" rx="24" fill="#38A3A5" fill-opacity="0.35"/>
+            <path class="square-anim" d="M144 177C144 163.745 154.745 153 168 153H281.006C294.261 153 305.006 163.745 305.006 177V291C305.006 304.255 294.261 315 281.006 315H168C154.745 315 144 304.255 144 291V177Z" fill="white"/>
+            <path class="square-anim" d="M144 501C144 487.745 154.745 477 168 477H281.006C294.261 477 305.006 487.745 305.006 501V615C305.006 628.255 294.261 639 281.006 639H168C154.745 639 144 628.255 144 615V501Z" fill="white"/>
+            <path class="square-anim" d="M0 339C0 325.745 10.7452 315 24 315H137.006C150.261 315 161.006 325.745 161.006 339V453C161.006 466.255 150.261 477 137.006 477H24C10.7451 477 0 466.255 0 453V339Z" fill="white" fill-opacity="0.28"/>
+            <ellipse class="square-anim" cx="232" cy="396.5" rx="71" ry="76.5" fill="#3DB2FF"/>
+            <ellipse class="square-anim" cx="376" cy="238.5" rx="71" ry="76.5" fill="#E8F6EF"/>
+        </svg>
+    </div>
+
+    <section class="featured">
+        <div class="left">
+            <div class="inner transition2">
+                <p class="subtitle">Featured Project</p>
+                <a href="#" class="featured-title">Virtual Marketplace</a>
+
+                <p class="featured-desc">This is my Marketplace App created with Flask and Python to facilitate virtual trade</p>
+            </div>
+        </div>
+        <img class="right transition2" src="{{url_for('static', filename='images/vm3.PNG')}}" alt="featured project">
+    </section>
+
+    <section class="skills">
+        <a name="MySkills"></a>
+        <div class="skills-container">
+            <ul>
+                <li class="transition2">
+                    <div class="icon-container one">
+                        <svg width="105" height="99" viewBox="0 0 105 99">
+                            <path d="M98 6L2 35L50.2462 44.5L61.0769 88L98 6Z" stroke="black" stroke-width="7"/>
+                            </svg>
+                    </div>
+                    <p class="skill-title">Web Development</p>
+                    <p class="featured-desc skill-desc">I have been making websites for over 9 years and I am in love with technical aspect of structuring websites as well as the creative aspects of making them appealing.</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container two">
+                        <img src="{{url_for('static', filename='images/appdevicon.svg')}}" alt="web-icon">
+                    </div>
+                    <p class="skill-title">App Development</p>
+                    <p class="featured-desc skill-desc">My passion for coding has extended past websites to developing useful applications for everyone from Web to Mobile I have gained a wealth of experience in app development.</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container three">
+                        <img src="{{url_for('static', filename='images/data-icon.svg')}}" alt="web-icon">
+                    </div>
+                    <p class="skill-title">Data Analysis</p>
+                    <p class="featured-desc skill-desc">I have been exploring the wonderful world of data. Having written software programs to analyze data sets, I have dabbled in statistical analysis, machine learning, data vizualization, and predictive modeling.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <a name="MyWork"></a>
+
+        <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+            <div class="inner">
+                <p class="subtitle">Computer Vision</p>
+                <p class="featured-title">Volume Gesture Control</p>
+                <p class="featured-desc">This is my Computer Vision App created with Python to control volume with gestures.</p>
+            </div>
+        </div>
+        <a href="https://github.com/JareddZwick/VolumeGestureControl"><img src="{{url_for('static', filename='images/cv.gif')}}" alt="volume gesture"></a>
+        </div>
+
+        <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+            <div class="inner">
+                <p class="subtitle">Flash Card App</p>
+                <p class="featured-title">Flashy</p>
+                <p class="featured-desc">This is my language teacher flashcard app. I used a list of subtitles to populate the most frequent words of a language into a Flash Card App.</p>
+            </div>
+        </div>
+        <a href="https://github.com/JareddZwick/FlashcardApp"><img src="{{url_for('static', filename='images/flashy.png')}}" alt="flashcard app"></a>
+        </div>
+
+        <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+            <div class="inner">
+                <p class="subtitle">Password App</p>
+                <p class="featured-title">MyPass Manager</p>
+                <p class="featured-desc">This is a python GUI App to generate, store, and retrieve random encrypted passwords for any site you desire.</p>
+            </div>
+        </div>
+        <a href="https://github.com/JareddZwick/Password-Manager-App"><img src="{{url_for('static', filename='images/mypass.png')}}" alt="Password App"></a>
+        </div>
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        tl.from('.content', {
+            y: '-30%',
+            opacity: 0,
+            duration: 1.5,
+            ease: Power4.easeOut
+        })
+        tl.from('.stagger1',{
+            opacity: 0,
+            y: -50,
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=1")
+        tl.from('.hero-design', {
+            opacity: 0, y: 50,ease: Power4.easeOut, duration: 1
+        }, "-=2.5")
+
+        gsap.from(".square-anim", {
+            stagger: .2, scale: 0.1, duration: 1, ease: Back.easeOut.config(1.7)
+        })
+
+        gsap.from('.transition2', {
+        scrollTrigger: {
+            trigger: '.transition2',
+            start: "top bottom"
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: .3
+        })
+
+        gsap.from(".transition3", {
+        scrollTrigger: {
+            trigger: ".transition3",
+            start: "top bottom"
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: .3
+        })
+    </script>
+</body>
+</html>
