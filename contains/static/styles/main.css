@@ -27,7 +27,7 @@ img {
 }
 
 .nav-container a {
-  color: white;
+  color: white !important;
 }
 
 header {
@@ -185,7 +185,7 @@ a{
 }
 
 .portfolio {
-  background: #F7F7F7;
+  background: #E8F6EF;
 }
 
 .portfolio-container a img {
@@ -231,6 +231,37 @@ a{
     margin-left: 2em;
   }
 }
+
+.guides {
+padding-top: 20px;
+}
+.guidestitle{
+font-size:2.7em;
+color: #38A3A5;
+text-decoration:underline;
+}
+
+.guidespic{
+width:14%;
+height:10%;
+border-radius:10px;
+margin-left:4vw;}
+
+.guidelistitem{
+text-align:left;
+border: 6px solid #E8F6EF;
+border-radius:24px;
+margin-top:3vw;}
+
+.guideslisttitle {
+margin-top:0.5rem;
+display:flex;
+margin-top:1.5rem;
+}
+
+.guidesitemtitle {
+margin:auto;
+font-size:2.2rem;}
 
 @media only screen and (min-width: 1050px) {
   .hero {

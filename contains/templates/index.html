@@ -1,26 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
 
-<head>
-<meta charset='UTF-8'>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Jared Zwick</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css')}}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;400;900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300&display=swap" rel="stylesheet"> 
-</head>
-<body>
+<!--<head>-->
+<!--<meta charset='UTF-8'>-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--<title> Jared Zwick</title>-->
+<!--<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css')}}">-->
+<!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;400;900&display=swap" rel="stylesheet">-->
+<!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300&display=swap" rel="stylesheet"> -->
+<!--</head>-->
+<!--<body>-->
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    a:visited{
+
+    text-decoration: none !important;
+    color:black;
+    }
+</style>
     <div class="nav-container">
         <header>
             <a href="index.html" class="logo">Jared Zwick</a>
             <nav>
                 <ul>
                     <li><a href="#myProjects">My Projects</a></li>
-                    <li><a href="#MySkills">Guides</a></li>
+                    <li><a href="#guides">Guides</a></li>
                     <li><a href="mailto:jareddzwick@gmail.com">Blogs</a></li>
                 </ul>
             </nav>
@@ -91,9 +100,9 @@
                             </svg>
                     </div>
                     <p class="skill-title">My Portfolio</p>
-                    <p class="featured-desc skill-desc">
-                        I show-off a couple of my side-projects. These apps were made with Python utilizing flask
-                        or Java utilizing spring. Each project contains a deployed link and a github link.
+                    <p class="featured-desc skill-desc" style="margin-bottom: 0; !important">
+                        I show-off a couple of my side-projects. These apps were made with Python.
+                        Check out the projects by clicking on the images.
                     </p>
                 </li>
                 <li class="transition2">
@@ -123,26 +132,29 @@
         <div class="left">
             <div class="inner transition2">
                 <p class="subtitle">Featured Project</p>
-                <a href="#" class="featured-title">Enzo - CMS For Auto Dealers</a>
+                <a href="https://jaredzwick.pythonanywhere.com" class="featured-title">Enzo - CMS For Auto Dealers</a>
 
-                <p class="featured-desc">This is my automated marketing system for dealerships. Contains automated
+                <p class="featured-desc" style="margin-right:1.5rem;">This is my automated marketing system for dealerships. Contains automated
                 web services by giving users the ability to upload inventory data, manage content posts, and
-                automate customer outreach</p>
+                automate customer outreach.</p>
             </div>
         </div>
-        <img class="right transition2" src="{{url_for('static', filename='images/enzodealerboard.PNG')}}" alt="featured project" style="border-radius: 4%;">
+    <a href="https://jaredzwick.pythonanywhere.com" class="featured-title">
+        <img class="right transition2" src="{{url_for('static', filename='images/enzodealerboard.PNG')}}" alt="featured project" style="border-radius: 3%;">
+    </a>
     </section>
     <section class="portfolio">
 
         <div class="portfolio-container transition3">
         <div class="portfolio-left">
             <div class="inner">
-                <p class="subtitle">Computer Vision</p>
-                <p class="featured-title">Volume Gesture Control</p>
-                <p class="featured-desc">This is my Computer Vision App created with Python to control volume with gestures.</p>
+                <p class="subtitle">Full Stack Web</p>
+                <p class="featured-title">Virtual escrow for exchanging items with crypto</p>
+                <p class="featured-desc">This is my virtual marketplace app designed to facilitate trade between crypto and physical objects.
+                Implements an escrow feature where funds are not released until product/service is confirmed.</p>
             </div>
         </div>
-        <a href="https://github.com/JareddZwick/VolumeGestureControl"><img src="{{url_for('static', filename='images/cv.gif')}}" alt="volume gesture"></a>
+        <a href="https://github.com/JareddZwick/VolumeGestureControl"><img src="{{url_for('static', filename='images/vm3.PNG')}}" alt="volume gesture" style="height: 85%;"></a>
         </div>
 
         <div class="portfolio-container transition3">
@@ -155,7 +167,6 @@
         </div>
         <a href="https://github.com/JareddZwick/FlashcardApp"><img src="{{url_for('static', filename='images/flashy.png')}}" alt="flashcard app"></a>
         </div>
-
         <div class="portfolio-container transition3">
         <div class="portfolio-left">
             <div class="inner">
@@ -166,10 +177,32 @@
         </div>
         <a href="https://github.com/JareddZwick/Password-Manager-App"><img src="{{url_for('static', filename='images/mypass.png')}}" alt="Password App"></a>
         </div>
-
-
     </section>
-
+    <a name="guides"></a>
+    <section class="guides">
+        <h1 class="guidestitle">Programming Guides</h1>
+        <div class = "guideslist">
+            <!-- for each guide in guideslist -->
+            <a href="{{url_for('guide', id=1)}}">
+            <div class="guidelistitem" >
+                <div class="guidelisttitle" style="display:flex; margin-top:1.5rem;" >
+                <img src="{{url_for('static', filename='images/dsa.png')}}" class="guidespic">
+                <h1 class="guidesitemtitle">Python Data Structures & Algorithms</h1>
+                 </div>
+                <p style="margin-left:4vw; font-size:2.4rem; margin-right:4vw; color: gray !important;">This is my comprehensive guide on the
+                data structures and algorithms in python.</p>
+            </div></a>
+            <!-- for each guide in guideslist -->
+            <div class="guidelistitem" >
+                <div class="guidelisttitle" style="display:flex; margin-top:1.5rem;" >
+                <img src="{{url_for('static', filename='images/python.png')}}" class="guidespic">
+                <h1 class="guidesitemtitle">Web Development in Python with Flask</h1>
+                 </div>
+                <p style="margin-left:4vw; font-size:2.4rem; margin-right:4vw; color: gray !important;">This is my guide on how to develop a web
+                server and the basics of using flask for web development with python.</p>
+                </div>
+        </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
@@ -219,5 +252,6 @@
         stagger: .3
         })
     </script>
-</body>
-</html>
+{% endblock %}
+<!--</body>-->
+<!--</html>-->

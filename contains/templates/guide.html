@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+</style>
+<div class="nav-container">
+        <header>
+            <a href="index.html" class="logo">Jared Zwick</a>
+            <nav>
+                <ul>
+                    <li><a href="#myProjects">My Projects</a></li>
+                    <li><a href="#guides">Guides</a></li>
+                    <li><a href="mailto:jareddzwick@gmail.com">Blogs</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="social-header">
+            <ul>
+                <li><a href="https://github.com/JareddZwick"><img src="{{url_for('static', filename='images/github.png')}}" alt="github"></a></li>
+                <li><a href="https://www.linkedin.com/in/jared-zwick/"><img src="{{url_for('static', filename='images/linkedin.png')}}" alt="linkedin"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCeociudef_2-XeHkDbgnYyw"><img src="{{url_for('static', filename='images/youtube.png')}}" alt="youtube"></a></li>
+            </ul>
+        </div>
+</div>
+<div class="title">Python Data Structures and Algorithms</div>
+<h1>{{guide}}</h1>
+{% endblock %}
