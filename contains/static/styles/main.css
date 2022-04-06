@@ -146,6 +146,7 @@ a{
   background-color: #E8F6EF;
   margin-top:0em !important;
   margin-bottom: 0em !important;
+  padding-top:8em;
 }
 
 .skills-container ul li {
@@ -215,7 +216,7 @@ a{
   .skills {
     margin-top: 0em;
     margin-bottom: -7em;
-    padding-top: 7em;
+    padding-top: 11em;
   }
   .skills-container ul {
     display: -ms-grid;
@@ -236,7 +237,7 @@ a{
 padding-top: 20px;
 }
 .guidestitle{
-font-size:2.7em;
+font-size:3.4em;
 color: #38A3A5;
 text-decoration:underline;
 }
@@ -260,6 +261,8 @@ margin-top:1.5rem;
 }
 
 .guidesitemtitle {
+margin-left: 2.5vw !important;
+font-size: 3.2rem !important;
 margin:auto;
 font-size:2.2rem;}
 
@@ -281,29 +284,32 @@ font-size:2.2rem;}
     padding: 2em 2em 2em 4em;
   }
   .social-header {
-    padding: 2em 4em 2em 0;
+    padding: 2em 4em 2em 0 !important;
   }
   section {
     padding: 4em;
   }
   .social-header {
-    display: block;
+    display: block !important;
   }
   .social-header ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 7em;
-    float: right;
-    margin-right: 4em;
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-pack: justify!important;
+        -ms-flex-pack: justify!important;
+            justify-content: space-between!important;
+    width: 7em!important;
+    float: right!important;
+    margin-right: 4em!important;
   }
   .social-header ul img {
-    width: 30px;
-    padding-left: 1em;
-    padding-right: 1em;
+    width: 30px!important;
+    padding-left: 1em!important;
+    padding-right: 1em!important;
+    -webkit-box-sizing: unset !important;
+    box-sizing:unset !important;
+    -moz-box-sizing:unset !important;
   }
   .hero {
     display: -ms-grid;

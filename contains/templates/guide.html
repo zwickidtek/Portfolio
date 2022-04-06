@@ -1,6 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
 <style>
+    body{
+        background-color: white;
+    }
+    .title {
+        padding-top:0;
+        background-color: white;
+    }
+    .content{
+        background-color: #e1e1e1;
+    }
 </style>
 <div class="nav-container">
         <header>
@@ -21,6 +31,37 @@
             </ul>
         </div>
 </div>
-<div class="title">Python Data Structures and Algorithms</div>
-<h1>{{guide}}</h1>
+<section class="title">
+<div class="title"> <!-- ############# todo: dynamic guide title -->
+    <h1>Python Data Structures and Algorithms</h1></div>
+<h4>{{guide}} - This course serves as an introduction to modern web application development with JavaScript. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js. The course also contains a section on GraphQL, a modern alternative to REST APIs.
+    The course covers testing, configuration and environment management, and the use of MongoDB for storing the application’s data.
+    The course is worth 5-13 credits, and the content is the same as in the Full stack course held at the Department of Computer Science at the University of Helsinki in Spring 2020. There is also an associated project that is worth 1-10 credits.
+    Partners and affiliates of the course include Houston Inc, Terveystalo, Elisa, K-ryhmä, Unity Technologies and Konecranes. See here for guest lectures on course-related topics given by various experts from our partners and affiliates.
+    Participants are expected to have good programming skills, basic knowledge of web programming and databases, and to know the basics of working with the Git version-control system. You are also expected to have perseverance and the ability for independent problem solving and information seeking.
+    Part 0 of the course material goes through the content and conduct of the course in more detail. Make sure to read the material and instructions thoroughly.</h4>
+</section>
+<section class="content">
+    <!-- <div class="bannerContainer">
+        For each banner in guide create a cool looking component
+        
+        <h4>Components n shit</h4><br><br><br><br>
+        <h4>Components n shit</h4><br><br><br><br>
+        <h4>Components n shit</h4><br><br><br><br>
+        <h4>Components n shit</h4><br><br><br><br>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"> 
+                <h1>Component</h1>
+            </div>
+            <div class="col-md-4">
+                <h1>Component</h1>
+            </div>
+            <div class="col-md-4"> 
+                <h1>Component</h1>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

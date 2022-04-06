@@ -1,32 +1,15 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-
-<!--<head>-->
-<!--<meta charset='UTF-8'>-->
-<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--<title> Jared Zwick</title>-->
-<!--<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css')}}">-->
-<!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
-<!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
-<!--<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;400;900&display=swap" rel="stylesheet">-->
-<!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
-<!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
-<!--<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300&display=swap" rel="stylesheet"> -->
-<!--</head>-->
-<!--<body>-->
 {% extends 'base.html' %}
 {% block content %}
 <style>
     a:visited{
-
     text-decoration: none !important;
     color:black;
     }
 </style>
-    <div class="nav-container">
+    <div class="nav-container navbar-static-top">
         <header>
             <a href="index.html" class="logo">Jared Zwick</a>
-            <nav>
+            <nav class="navbar-static-top">
                 <ul>
                     <li><a href="#myProjects">My Projects</a></li>
                     <li><a href="#guides">Guides</a></li>
@@ -69,25 +52,10 @@
             <path class="square-anim" d="M144 177C144 163.745 154.745 153 168 153H281.006C294.261 153 305.006 163.745 305.006 177V291C305.006 304.255 294.261 315 281.006 315H168C154.745 315 144 304.255 144 291V177Z" fill="white"/>
             <path class="square-anim" d="M144 501C144 487.745 154.745 477 168 477H281.006C294.261 477 305.006 487.745 305.006 501V615C305.006 628.255 294.261 639 281.006 639H168C154.745 639 144 628.255 144 615V501Z" fill="white"/>
             <path class="square-anim" d="M0 339C0 325.745 10.7452 315 24 315H137.006C150.261 315 161.006 325.745 161.006 339V453C161.006 466.255 150.261 477 137.006 477H24C10.7451 477 0 466.255 0 453V339Z" fill="white" fill-opacity="0.28"/>
-            <ellipse class="square-anim" cx="232" cy="396.5" rx="71" ry="76.5" fill="#3DB2FF"/>
+            <ellipse class="square-anim" cx="232" cy="396.5" rx="71" ry="76.5" fill="#22577A"/>
             <ellipse class="square-anim" cx="376" cy="238.5" rx="71" ry="76.5" fill="#E8F6EF"/>
         </svg>
     </div>
-
-<!--    <section class="featured">-->
-<!--        <div class="left">-->
-<!--            <div class="inner transition2">-->
-<!--                <p class="subtitle">Featured Project</p>-->
-<!--                <a href="#" class="featured-title">Virtual Marketplace</a>-->
-
-<!--                <p class="featured-desc">This is my automated marketing system for dealerships. Contains automated-->
-<!--                web services by giving users the ability to upload inventory data, manage content posts, and-->
-<!--                automate customer outreach</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <img class="right transition2" src="{{url_for('static', filename='images/enzodealerboard.PNG')}}" alt="featured project">-->
-<!--    </section>-->
-
     <section class="skills">
         <a name="MySkills"></a>
         <div class="skills-container">
@@ -189,7 +157,7 @@
                 <img src="{{url_for('static', filename='images/dsa.png')}}" class="guidespic">
                 <h1 class="guidesitemtitle">Python Data Structures & Algorithms</h1>
                  </div>
-                <p style="margin-left:4vw; font-size:2.4rem; margin-right:4vw; color: gray !important;">This is my comprehensive guide on the
+                <p style="margin-left:4vw; font-size:2.4rem; margin-right:4vw; color: gray !important; font-weight:650 !important;">This is my comprehensive guide on the
                 data structures and algorithms in python.</p>
             </div></a>
             <!-- for each guide in guideslist -->
@@ -198,7 +166,7 @@
                 <img src="{{url_for('static', filename='images/python.png')}}" class="guidespic">
                 <h1 class="guidesitemtitle">Web Development in Python with Flask</h1>
                  </div>
-                <p style="margin-left:4vw; font-size:2.4rem; margin-right:4vw; color: gray !important;">This is my guide on how to develop a web
+                <p style="margin-left:4vw; font-size:2.4rem; margin-right:4vw; color: gray !important;  font-weight:650 !important;">This is my guide on how to develop a web
                 server and the basics of using flask for web development with python.</p>
                 </div>
         </div>
