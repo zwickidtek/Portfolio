@@ -10,3 +10,4 @@ class Articlez(db.Model):
     tag1 = db.Column(db.String(12), default="Project")
     tag2 = db.Column(db.String(12), default="Startup")
     tag3 = db.Column(db.String(12), default="Career")
+    anchor = db.Column(db.String(340))

@@ -168,19 +168,19 @@ section {
   padding: 1.5rem !important;
   border-radius: 16px;
   background: #E8F6EF;
-  box-shadow: -1rem 0 3rem #000;
+  box-shadow: -1rem 0 2rem #000;
   color: #38A3A5;
   transition: .4s;
 }
 .card:hover h2{
   transform: translateY(-1rem);
-  font-size: 3rem;
+  font-size: 2.3rem;
   transition: .4s;
 }
 
 .card:hover p{
   transform: translateY(-1rem);
-  font-size: 2rem;
+  font-size: 1.8rem;
   transition: .4s;
 }
 .card:hover~.card {

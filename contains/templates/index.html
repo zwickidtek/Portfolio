@@ -79,16 +79,16 @@
                   </div>
 
                   <div class="tags">
-                    <a href="#">html</a>
-                    <a href="#">css</a>
-                    <a href="#">web-dev</a>
+                    <a>html</a>
+                    <a>css</a>
+                    <a>web-dev</a>
                   </div>
             </article>
             {% for note in notes %}
             <article class="card">
                 <div class="hcard">
                     <p><!-- May 27th, 2020 -->{{note.date.strftime("%d %b, %Y")}}</p>
-                    <h2>{{note.text}}</h2>
+                    <h2>{{note.text}} - <a href="#guides">link</a></h2>
                 </div>
                 <div class="card-author">
                     <a class="author-avatar" href="#">
@@ -105,139 +105,12 @@
                   </div>
 
                   <div class="tags">
-                    <a href="#">{{note.tag1}}</a>
-                    <a href="#">{{note.tag2}}</a>
-                    <a href="#">{{note.tag3}}</a>
+                    <a href={{note.anchor}}>{{note.tag1}}</a>
+                    <a href={{note.anchor}}>{{note.tag2}}</a>
+                    <a href={{note.anchor}}>{{note.tag3}}</a>
                   </div>
             </article>
             {% endfor %}
-
-            <article class="card">
-                <div class="hcard">
-                    <p>May 27th, 2020</p>
-                    <h2>31 ------Card tricks are fun.</h2>
-                </div>
-                <div class="card-author">
-                    <a class="author-avatar" href="#">
-                        <img src="{{url_for('static',filename='images/face-modified.png')}}" />
-                    </a>
-                    <svg class="half-circle" viewBox="0 0 106 57">
-                      <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                    </svg>
-
-                    <div class="author-name">
-                      <div class="author-name-prefix">By:</div>
-                      Jared Zwick
-                    </div>
-                  </div>
-
-                  <div class="tags">
-                    <a href="#">html</a>
-                    <a href="#">css</a>
-                    <a href="#">web-dev</a>
-                  </div>
-            </article>
-
-            <article class="card">
-                <div class="hcard">
-                    <p>May 27th, 2020</p>
-                    <h2>Card tricks are fun.</h2>
-                </div>
-                <div class="card-author">
-                    <a class="author-avatar" href="#">
-                        <img src="{{url_for('static',filename='images/face-modified.png')}}" />
-                    </a>
-                    <svg class="half-circle" viewBox="0 0 106 57">
-                      <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                    </svg>
-
-                    <div class="author-name">
-                      <div class="author-name-prefix">By:</div>
-                      Jared Zwick
-                    </div>
-                  </div>
-
-                  <div class="tags">
-                    <a href="#">html</a>
-                    <a href="#">css</a>
-                    <a href="#">web-dev</a>
-                  </div>
-            </article>
-            <article class="card">
-                <div class="hcard">
-                    <p>May 27th, 2020</p>
-                    <h2>Card tricks are fun.</h2>
-                </div>
-                <div class="card-author">
-                    <a class="author-avatar" href="#">
-                        <img src="{{url_for('static',filename='images/face-modified.png')}}" />
-                    </a>
-                    <svg class="half-circle" viewBox="0 0 106 57">
-                      <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                    </svg>
-
-                    <div class="author-name">
-                      <div class="author-name-prefix">By:</div>
-                      Jared Zwick
-                    </div>
-                  </div>
-
-                  <div class="tags">
-                    <a href="#">html</a>
-                    <a href="#">css</a>
-                    <a href="#">web-dev</a>
-                  </div>
-            </article>
-            <article class="card">
-                <div class="hcard">
-                    <p>May 27th, 2020</p>
-                    <h2>Card tricks are fun.</h2>
-                </div>
-                <div class="card-author">
-                    <a class="author-avatar" href="#">
-                        <img src="{{url_for('static',filename='images/face-modified.png')}}" />
-                    </a>
-                    <svg class="half-circle" viewBox="0 0 106 57">
-                      <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                    </svg>
-
-                    <div class="author-name">
-                      <div class="author-name-prefix">By:</div>
-                      Jared Zwick
-                    </div>
-                  </div>
-
-                  <div class="tags">
-                    <a href="#">html</a>
-                    <a href="#">css</a>
-                    <a href="#">web-dev</a>
-                  </div>
-            </article>
-            <article class="card">
-                <div class="hcard">
-                    <p>May 27th, 2020</p>
-                    <h2>Card tricks are fun.</h2>
-                </div>
-                <div class="card-author">
-                    <a class="author-avatar" href="#">
-                        <img src="{{url_for('static',filename='images/face-modified.png')}}" />
-                    </a>
-                    <svg class="half-circle" viewBox="0 0 106 57">
-                      <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                    </svg>
-
-                    <div class="author-name">
-                      <div class="author-name-prefix">By:</div>
-                      Jared Zwick
-                    </div>
-                  </div>
-
-                  <div class="tags">
-                    <a href="#">html</a>
-                    <a href="#">css</a>
-                    <a href="#">web-dev</a>
-                  </div>
-            </article>
     </section>
      <a name="myProjects"></a>
 <section class="featured">
