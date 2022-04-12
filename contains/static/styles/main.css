@@ -391,21 +391,39 @@ display: none;
   }
 }
 
-.guides {
-padding-top: 20px;
+a:visited{
+  text-decoration: none !important;
+  color:black;
+  }
+.guidescontainer{
+  display: grid;
+  grid-gap: 10rem;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
 }
+.guidespic{
+max-height:100%;
+max-width:100%;
+border-radius:10px;
+filter: grayscale(50%);}
+
+.guide {
+display:flex;
+flex-direction: column;
+border: 6px solid #E8F6EF;
+border-radius:24px;
+}
+
+
+.guides {
+  padding-top: 20px;
+}
+
+
 .guidestitle{
 font-size:3.4em;
 color: #38A3A5;
 text-decoration:underline;
 }
-
-.guidespic{
-width:14%;
-height:10%;
-border-radius:10px;
-margin-left:4vw;}
-
 .guidelistitem{
 text-align:left;
 border: 6px solid #E8F6EF;
