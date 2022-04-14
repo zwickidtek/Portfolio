@@ -50,7 +50,7 @@
             <ellipse class="square-anim" cx="376" cy="238.5" rx="71" ry="76.5" fill="#E8F6EF"/>
         </svg>
     </div>
-    <p class="subtitle" style="text-align: center; font-size: 5rem; font-weight: 200; margin-top:100px; padding-top: 100px;">What's New?</p>
+    <div contenteditable="true"> <p class="subtitle" style="text-align: center; font-size: 5rem; font-weight: 200; margin-top:100px; padding-top: 100px;">What's New?</p></div>
     <section class="card-list">
         <a name="MySkills"></a>
             <article class="card">
@@ -160,6 +160,7 @@
     <a name="guides"></a>
     <section class="guides">
         <h1 class="guidestitle">Programming Guides</h1>
+        <a href="{{url_for('guide', id=1)}}">
         <div class="guidescontainer">
             <div class="guide">
                 <img src="{{url_for('static', filename='images/dsa.png')}}" class="guidespic">
@@ -168,6 +169,7 @@
                 </span>
                 </div>
             </div>
+            </a>
             <div class="guide">
                 <img src="{{url_for('static', filename='images/python.png')}}" class="guidespic">
                 <div class="noteFooter">
