@@ -1,7 +1,7 @@
 from contains import db
 from datetime import datetime
 
-tagTypes = ['Project', 'Web-Dev', 'Startup', 'Python', 'JavaScript', 'Career', 'React']
+tagTypes = ['Project', 'Web-Dev', 'Startup', 'Python', 'JavaScript', 'Career', 'React', 'Auto']
 
 class Articlez(db.Model):
     id = db.Column(db.Integer(), primary_key=True)
