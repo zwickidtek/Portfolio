@@ -15,6 +15,11 @@ def guide(id):
     return render_template('guide.html', guide=id)
 
 
+@app.route('/b')
+def blogs():
+    return render_template('blog.html')
+
+
 db.create_all()
 if __name__=="__main__":
     app.run(debug=True, port=3000)
